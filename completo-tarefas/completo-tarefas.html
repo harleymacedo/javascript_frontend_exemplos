@@ -4,6 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo completo</title>
+    <style>
+        #div1 {
+            background-color:darkkhaki;
+            height: 200px;
+            width: 38%;
+            top: 200px;
+            position: absolute;
+        }
+        #div2 {
+            background-color: darkkhaki;
+            height: 200px;
+            width: 18%;
+            left: 40%;
+            top: 200px;
+            position: absolute;
+        }
+        #div3 {
+            background-color: darkkhaki;
+            height: 200px;
+            width: 38%;
+            left: 60%;
+            top: 200px;
+            position: absolute;
+        }
+    </style>
     <script>
         let corAtual = 'white'
         function alternarCor() {
@@ -17,8 +42,11 @@
         }
         function jogarItemParaDireita() {
             var elemento = document.querySelector('#ul1').firstElementChild
-            console.log(elemento)
             document.querySelector('#ul2').appendChild(elemento)
+        }
+        function jogarItemParaEsquerda() {
+            var elemento = document.querySelector('#ul2').firstElementChild
+            document.querySelector('#ul1').appendChild(elemento)
         }
     </script>
 </head>
