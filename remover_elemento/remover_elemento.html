@@ -1,24 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Remover elemento</title>
     <script>
-        function alterar(elemento) {
-            var elementoPai = elemento.parentNode;
-            var elementoNovo =elementoPai.removeChild(elemento);
-            var divNova = document.querySelector('#divNova');
-            divNova.appendChild(elementoNovo);
+        function removeElemento() {
+            document.getElementById("demo").remove()
         }
     </script>
-</head>
+    </head>
 <body>
-    <div id="divFrase" style="height: 30px; background-color: darkkhaki;">
-        <span onclick="alterar(this)"> Eu </span><span onclick="alterar(this)"> moro </span><span onclick="alterar(this)"> no </span><span onclick="alterar(this)"> Crato </span>
-    </div>
-    <div id="divNova" style="height: 30px; background-color: darkseagreen">
-
-    </div>
+    <h1>Remover elemento</h1>
+    <p>Parágrafo 1</p>
+    <p id="demo">Parágrafo 2</p>
+    <button onclick="removeElemento()">Remover</button>
 </body>
 </html>
