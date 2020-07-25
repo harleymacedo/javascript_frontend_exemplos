@@ -13,7 +13,8 @@
     <script>
         function alterarImagem() {
             let valor = document.querySelector('#n1').value
-            let resolucaoAtual = document.querySelector('#img1').style.height
+            let resolucaoAtual = 80
+            console.log(resolucaoAtual)
             if (valor > 0) {
                 document.querySelector('#img1').style.height = (resolucaoAtual * valor) + 'px'
                 document.querySelector('#img1').style.width = (resolucaoAtual * valor) + 'px'
